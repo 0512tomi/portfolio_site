@@ -1,0 +1,553 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    width: 100%;
+    font-family: "PT Serif", serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    cursor: pointer;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#wrap{
+    overflow: hidden;
+}
+
+.inner{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#header_wrapper{
+    width: 100%;
+    height: 65px;
+}
+
+#header_logo{
+    width: 100%;
+    height: 65px;
+    text-align: center;
+}
+
+#header_logo h1{
+    line-height: 65px;
+    font-size: 1.25rem;
+}
+
+#menu_btn{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    margin: 10px 20px 10px 10px;
+    background-color: rgb(10,10,10);
+    border-radius: 8px;
+}
+
+.fa-times{
+    display: none;
+}
+
+#header_cross{
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#header_cross:hover{
+    background-color: rgb(255,255,255,0.2);
+}
+
+#header_right{
+    width: 100%;
+    margin-right: 30px;
+}
+
+#header_menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    padding-top: 60px;
+    background-color: rgb(126,126,126,0.9);
+    z-index: 100;
+}
+
+.header_list{
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.header_list a{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.header_list a:hover{
+    background-color: rgb(255,255,255,0.3);
+}
+
+#top_img_wrapper{
+    position: relative;
+}
+
+.top_img{
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+#img_p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20%;
+    width: 60%;
+    background-color: rgb(255,255,255,0.8);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+#profile_wrapper{
+    text-align: center;
+    padding: 40px 0;
+}
+
+#introduction h3{
+    margin: 30px 0;
+    font-size: 1.875rem;
+}
+
+#introduction span{
+    color: red;
+    font-weight: bold;
+}
+
+#introduction p{
+    padding-bottom: 40px;
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 0.875rem;
+}
+
+#profile_box{
+    margin: 40px 0;
+}
+
+#profile_img{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+h2{
+    font-size: 1.875rem;
+}
+
+#profile_wrapper ul{
+    text-align: left;
+    line-height: 1.5;
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+li{
+    list-style: none;
+}
+
+#profile_wrapper ul li{
+    font-size: 0.875rem;
+    padding-bottom: 15px;
+    line-height: 2;
+}
+
+#profile_wrapper ul li span{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#work_wrapper{
+    text-align: center;
+    background-color: rgb(220,220,220);
+    padding: 20px 0;
+}
+
+#works{
+    width: 100%;
+}
+
+.work h3{
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.work_icon{
+    font-size: 3.125rem;
+    padding: 25px 0;
+}
+
+.work{
+    width: 90%;
+    margin: 40px auto 40px;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.img_boxes{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explanation{
+    text-align: left;
+    padding: 40px 15px 0;
+}
+
+.img_box img{
+    width: 70%;
+    height: 90px;
+}
+
+.p_name{
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.4375rem 0;
+}
+
+.row{
+    margin-right:0;
+    margin-left: 0;
+}
+
+#portfolio_wrapper{
+    padding: 50px 15px 70px;
+}
+
+#portfolio_boxes{
+    width: 100%;
+}
+
+.portfolio_box{
+    height: auto;
+    margin: 30px 0;
+}
+
+.portfolio_text{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 20px;
+}
+
+.portfolio_img{
+    width: 100%;
+    height: auto;
+}
+
+.portfolio_img img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.portfolio_box a{
+    display: inline-block;
+    border: #cccccc 1px solid;
+    border-radius: 8px;
+    color: #000;
+}
+
+.portfolio_box a:hover{
+    color: rgb(126,126,126);
+}
+
+#portfolio_wrapper h2{
+    text-align: center;
+    padding: 25px 15px 30px;
+}
+
+#top_btn{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    border-radius: 50%;
+}
+
+#top_btn a{
+    display: inline-block;
+    line-height: 45px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.scroll{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.animated{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(100,100,100);
+}
+
+#footer_wrapper{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer_list{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    padding: 5px 10px;
+    margin: 5px 20px 0 0;
+}
+
+.footer_list a{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.footer_list a:hover{
+    background-color: rgb(255,255,255,0.5);
+}
+
+#footer_nav p{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 768px){
+    html{
+        font-size: 20px;
+    }
+
+    #profile_img{
+        width: 30%;
+        height: auto;
+    }
+
+    #profile_wrapper ul{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .work{
+        width: 85%;
+    }
+
+    .explanation{
+        line-height: 1.5;
+        padding: 40px 20px 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    html{
+        font-size: 22px;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background-color: #fff;
+    }
+
+    #top_img_wrapper{
+        margin-top: 65px;
+    }
+
+    #menu_btn{
+        display: none;
+    }
+
+    #header_wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header_logo{
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    #header_menu{
+        display: block;
+        position: static;
+        text-align: right;
+        height: 65px;
+        line-height: 65px;
+        width: 100%;
+        padding: 0;
+        background-color:transparent;
+        z-index: 100;
+    }
+
+    .header_list{
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        width: 150px;
+        color: #000;
+        margin: 0;
+        height: 65px;
+    }
+
+    .header_list a{
+        color: #000;
+        padding: 0;
+        height: 65px;
+        line-height: 65px;
+        font-weight: 500;
+    }
+
+    .header_list a:hover{
+        background-color: rgb(220,220,220,0.2);
+    }
+
+}
