@@ -315,6 +315,10 @@ li{
     background-color: #fff;
 }
 
+.place p{
+    line-height: 1.5;
+}
+
 .img_boxes{
     height: 120px;
     display: flex;
